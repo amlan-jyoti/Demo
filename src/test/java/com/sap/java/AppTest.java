@@ -9,6 +9,6 @@ public class AppTest
     @Test
     public void test1()
     {
-        assertEquals(12, 4*3);
+        assertEquals(12, 6*2);
     }
 }
