@@ -6,10 +6,21 @@ import org.junit.Test;
 
 public class AppTest 
 {
+    @Test
+    public void testPos()
+    {
+        App app = new App();
+        String expr = "[{()}]";
+        Boolean isValid = app.validParanthesis(expr);
+        assertEquals(true, isValid);
+    }
 
     @Test
-    public void test1()
+    public void testNeg()
     {
-        assertEquals(12, 6*2);
+        App app = new App();
+        String expr = "[[{()}]";
+        Boolean isValid = app.validParanthesis(expr);
+        assertEquals(false, isValid);
     }
 }
